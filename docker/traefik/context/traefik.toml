@@ -1,0 +1,25 @@
+[api]
+
+[docker]
+domain = "chell.rael.io"
+watch = true
+
+[file]
+
+watch = true
+
+[frontends]
+
+  [frontends.github]
+  backend = "github"
+  passHostHeader = true
+
+    [frontends.github.routes.main]
+    rule = "Host:chell.rael.io"
+
+[backends]
+
+	[backends.github]
+
+		[backends.github.servers.github]
+		url = "https://raelga.github.io:443"
