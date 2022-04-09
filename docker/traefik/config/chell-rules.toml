@@ -1,12 +1,4 @@
-[api]
-
-[docker]
-domain = "chell.rael.io"
-watch = true
-
-[file]
-
-watch = true
+# chell-rules.toml
 
 [frontends]
 
@@ -23,3 +15,4 @@ watch = true
 
 		[backends.github.servers.github]
 		url = "https://raelga.github.io:443"
+
